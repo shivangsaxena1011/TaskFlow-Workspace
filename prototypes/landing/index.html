@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "outline-variant": "#c7c4d7", "on-primary-fixed-variant": "#2f2ebe", "tertiary-fixed": "#acedff", "surface-dim": "#d2d9f4", "on-primary-fixed": "#07006c", "on-error-container": "#93000a", "surface-bright": "#faf8ff", "surface-variant": "#dae2fd", "outline": "#767586", "surface-container-lowest": "#ffffff", "inverse-on-surface": "#eef0ff", "error-container": "#ffdad6", "primary-fixed-dim": "#c0c1ff", "surface-tint": "#494bd6", "secondary": "#6b38d4", "secondary-container": "#8455ef", "inverse-primary": "#c0c1ff", "on-secondary-fixed-variant": "#5516be", "secondary-fixed-dim": "#d0bcff", "tertiary-fixed-dim": "#4cd7f6", "on-secondary-container": "#fffbff", "primary": "#4648d4", "surface-container-low": "#f2f3ff", "on-secondary-fixed": "#23005c", "primary-container": "#6063ee", "error": "#ba1a1a", "surface-container": "#eaedff", "on-tertiary-fixed-variant": "#004e5c", "on-surface-variant": "#464554", "on-tertiary-container": "#f9fdff", "on-background": "#131b2e", "tertiary-container": "#008096", "on-tertiary": "#ffffff", "surface-container-highest": "#dae2fd", "tertiary": "#006577", "inverse-surface": "#283044", "primary-fixed": "#e1e0ff", "on-error": "#ffffff", "surface": "#faf8ff", "surface-container-high": "#e2e7ff", "on-tertiary-fixed": "#001f26", "on-primary-container": "#fffbff", "on-surface": "#131b2e", "on-secondary": "#ffffff", "background": "#faf8ff", "secondary-fixed": "#e9ddff", "on-primary": "#ffffff" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin": "1rem", "space-sm": "0.5rem", "gutter": "1rem", "space-md": "0.75rem", "space-xl": "1.5rem", "space-xs": "0.25rem", "gutter-tablet": "1.25rem", "gutter-desktop": "1.5rem", "margin-tablet": "1.5rem", "space-lg": "1rem", "margin-desktop": "2rem" }, "fontFamily": { "label-sm": [ "Inter" ], "body-md": [ "Inter" ], "headline-xl-mobile": [ "Inter" ], "headline-xl": [ "Inter" ], "title-md": [ "Inter" ], "headline-lg": [ "Inter" ], "body-sm": [ "Inter" ], "label-xs": [ "Inter" ], "headline-sm": [ "Inter" ], "body-lg": [ "Inter" ], "display-lg": [ "Inter" ], "label-md": [ "Inter" ] }, "fontSize": { "label-sm": [ "0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.01em", "fontWeight": "500" } ], "body-md": [ "0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-xl-mobile": [ "1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "headline-xl": [ "2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "title-md": [ "1.125rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "headline-lg": [ "1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "body-sm": [ "0.75rem", { "lineHeight": "1rem", "letterSpacing": "0em", "fontWeight": "400" } ], "label-xs": [ "0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.02em", "fontWeight": "600" } ], "headline-sm": [ "1.25rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-lg": [ "1rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.005em", "fontWeight": "400" } ], "display-lg": [ "3rem", { "lineHeight": "3.5rem", "letterSpacing": "-0.025em", "fontWeight": "700" } ], "label-md": [ "0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.005em", "fontWeight": "500" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md"><div class="w-9 h-9 rounded-lg bg-gradient-to-tr from-primary via-secondary to-tertiary-fixed flex items-center justify-center shadow-[0_0_12px_rgba(70,72,212,0.35)]"><span class="material-symbols-outlined text-on-primary text-[20px]">splitscreen</span></div><a class="flex items-center gap-space-xs font-title-md text-title-md font-semibold text-on-surface tracking-tight" data-path="product" href="#">TaskFlow</a></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-surface-container-high text-on-surface font-semibold rounded-lg"><a aria-current="page" class="px-space-md py-space-xs transition-colors bg-surface-container-high text-on-surface font-semibold rounded-lg" data-path="product" href="#">Product</a><a class="px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="features" href="#">Features</a><a class="px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="architecture" href="#">Architecture</a><a class="px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="live-demo" href="../kanban/index.html">Live Demo</a><a class="px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="documentation" href="../../README.md">Docs</a><a class="px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="pricing" href="#">Pricing</a></nav><div class="flex items-center gap-space-sm"><a class="hidden sm:inline-flex items-center justify-center px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface hover:bg-surface-container hover:text-on-surface transition-colors" data-path="sign-in" href="../dashboard/index.html">Sign In</a><a class="inline-flex items-center justify-center px-space-lg py-space-xs rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md transition-colors shadow-[0_1px_4px_rgba(70,72,212,0.25)]" data-path="sign-up" href="../dashboard/index.html">Get Started Free</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface min-h-[calc(100vh-4rem)]"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="relative w-full overflow-hidden pt-space-xl pb-24 md:pb-32 px-margin md:px-margin-tablet lg:px-margin-desktop">
+<!-- Ambient Glow Backdrop -->
+<div class="absolute top-12 left-1/2 -translate-x-1/2 w-[720px] h-[400px] bg-gradient-to-b from-primary/15 via-secondary/10 to-transparent blur-3xl rounded-full pointer-events-none -z-10"></div>
+<div class="absolute -top-20 right-10 w-96 h-96 bg-tertiary-fixed/30 blur-[120px] rounded-full pointer-events-none -z-10"></div>
+<div class="max-w-6xl mx-auto flex flex-col items-center text-center">
+<!-- Eyebrow Pill -->
+<div class="inline-flex items-center gap-space-xs px-space-md py-1 rounded-full bg-surface-container shadow-sm mb-space-lg">
+<span class="inline-flex items-center justify-center w-4 h-4 rounded-full bg-primary text-on-primary text-[10px]">★</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold tracking-wide">TaskFlow v1.0 Launch — Real-Time Duplex Collaboration</span>
+<span class="material-symbols-outlined text-[14px] text-primary">arrow_forward</span>
+</div>
+<!-- Main Heading -->
+<h1 class="font-display-lg text-display-lg font-bold text-on-surface tracking-tight max-w-4xl text-balance">
+        Ship Products Faster with <span class="bg-gradient-to-r from-primary via-secondary to-tertiary-container bg-clip-text text-transparent">Zero Friction</span> &amp; Live Duplex Sync
+      </h1>
+<!-- Subtitle -->
+<p class="mt-space-lg font-body-lg text-body-lg text-on-surface-variant max-w-2xl text-balance">
+        A modern, lightweight, real-time project management platform built with pure HTML5, Node.js, Socket.IO, and MongoDB Atlas. Engineered for high-velocity software engineering squads.
+      </p>
+<!-- CTAs -->
+<div class="mt-space-xl flex flex-wrap items-center justify-center gap-space-md">
+<a class="inline-flex items-center gap-space-sm px-6 py-3 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md transition-all shadow-[0_10px_25px_-5px_rgba(70,72,212,0.45)] hover:scale-[1.02]" href="../dashboard/index.html">
+<span>Start Building Free</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="inline-flex items-center gap-space-sm px-6 py-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors shadow-sm" href="../kanban/index.html">
+<span class="material-symbols-outlined text-primary text-[20px]">play_circle</span>
+<span>Explore Live Kanban Demo</span>
+</a>
+</div>
+<!-- Tech Trust Micro Badges -->
+<div class="mt-space-xl flex flex-wrap items-center justify-center gap-y-space-sm gap-x-space-lg font-label-xs text-label-xs text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[16px]">cloud_done</span>
+<span>Runs on Free-Tier Infra</span>
+</div>
+<span class="text-outline-variant">•</span>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[16px]">verified_user</span>
+<span>100% Zero-Trust RBAC</span>
+</div>
+<span class="text-outline-variant">•</span>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary-container text-[16px]">bolt</span>
+<span>&lt;150ms Duplex Sync</span>
+</div>
+</div>
+</div>
+<!-- INTERACTIVE HERO MOCKUP -->
+<div class="mt-14 max-w-6xl mx-auto relative" id="interactive-demo">
+<div class="relative rounded-xl bg-surface-container-lowest p-space-md md:p-space-lg shadow-[0_20px_50px_rgba(19,27,46,0.09)]">
+<!-- Mock Window Toolbar -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pb-space-md mb-space-md border-b border-surface-container">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-error-container inline-block"></span>
+<span class="w-3 h-3 rounded-full bg-surface-container-highest inline-block"></span>
+<span class="w-3 h-3 rounded-full bg-tertiary-fixed inline-block"></span>
+</div>
+<div class="flex items-center gap-2 px-space-md py-1 bg-surface-container rounded-lg">
+<span class="material-symbols-outlined text-[16px] text-primary">view_kanban</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Sprint #42 • Core Engine V2</span>
+<span class="px-2 py-0.5 rounded-full text-label-xs font-label-xs bg-tertiary-fixed/30 text-on-tertiary-fixed-variant font-bold">ACTIVE</span>
+</div>
+</div>
+<!-- Live Sync Room Status -->
+<div class="flex items-center gap-space-md">
+<div class="hidden sm:flex items-center gap-space-xs font-label-xs text-label-xs text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-ping"></span>
+<span>Room: <strong class="text-on-surface font-mono">proj_engine_9x</strong></span>
+</div>
+<div class="flex items-center -space-x-2">
+<div class="w-7 h-7 rounded-full bg-primary flex items-center justify-center text-[11px] font-bold text-on-primary">SK</div>
+<div class="w-7 h-7 rounded-full bg-secondary flex items-center justify-center text-[11px] font-bold text-on-secondary">AL</div>
+<div class="w-7 h-7 rounded-full bg-tertiary-container flex items-center justify-center text-[11px] font-bold text-on-tertiary">RV</div>
+<div class="w-7 h-7 rounded-full bg-surface-container-high flex items-center justify-center text-[10px] font-bold text-on-surface">+6</div>
+</div>
+<button class="px-space-md py-1 rounded bg-primary-fixed text-on-primary-fixed hover:bg-primary-fixed-dim transition-all text-label-xs font-label-xs font-semibold flex items-center gap-1 shadow-sm" onclick="simulateSocketEvent()">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+              Simulate Sync
+            </button>
+</div>
+</div>
+<!-- Kanban Board Container -->
+<div class="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Live Cursor Hover Simulation Overlay -->
+<div class="absolute z-30 transition-all duration-700 pointer-events-none flex flex-col items-start gap-1" id="liveCursor" style="top: 85px; left: 34%;">
+<div class="flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-secondary text-on-secondary font-label-xs text-label-xs shadow-md">
+<span class="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span>
+<span>Shivang (Lead) • moving TASK-104</span>
+</div>
+<svg class="w-5 h-5 text-secondary -mt-1 drop-shadow" fill="currentColor" viewbox="0 0 24 24">
+<path d="M3 2l18 8-8 2-2 8z"></path>
+</svg>
+</div>
+<!-- Column 1: Backlog / To Do -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">To Do</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-label-xs text-label-xs text-on-surface-variant font-medium">3</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[16px]">more_horiz</span>
+</div>
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm hover:shadow transition-shadow cursor-grab">
+<div class="flex items-center justify-between text-label-xs font-label-xs text-outline mb-1">
+<span>TASK-102</span>
+<span class="px-1.5 py-0.5 rounded bg-tertiary-fixed/30 text-on-tertiary-fixed-variant">Refactor</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface font-medium leading-snug">Implement Socket.IO connection recovery heartbeat</p>
+<div class="mt-3 flex items-center justify-between text-body-sm text-body-sm text-on-surface-variant">
+<span class="flex items-center gap-1 font-label-xs text-label-xs text-tertiary font-medium">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 2h
+                </span>
+<div class="w-5 h-5 rounded-full bg-primary-container text-on-primary-container text-[9px] font-bold flex items-center justify-center">MK</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm hover:shadow transition-shadow cursor-grab">
+<div class="flex items-center justify-between text-label-xs font-label-xs text-outline mb-1">
+<span>TASK-103</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant">Docs</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface font-medium leading-snug">Draft RBAC matrix specs for viewer &amp; admin roles</p>
+<div class="mt-3 flex items-center justify-between">
+<span class="flex items-center gap-1 font-label-xs text-label-xs text-outline">
+<span class="material-symbols-outlined text-[14px]">attach_file</span> 1
+                </span>
+<div class="w-5 h-5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-[9px] font-bold flex items-center justify-center">AL</div>
+</div>
+</div>
+</div>
+<!-- Column 2: In Progress -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm font-bold text-primary">In Progress</span>
+<span class="px-1.5 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-xs text-label-xs font-semibold">2</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[16px]">more_horiz</span>
+</div>
+<!-- Active Moving Task -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-md transition-all duration-500 scale-[1.02]" id="simulatedTaskCard">
+<div class="flex items-center justify-between text-label-xs font-label-xs mb-1">
+<span class="font-semibold text-primary">TASK-104</span>
+<span class="px-1.5 py-0.5 rounded bg-error-container text-on-error-container font-semibold">Urgent</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface font-semibold leading-snug">Compound Index migration on MongoDB Atlas</p>
+<div class="mt-3 flex items-center justify-between">
+<span class="flex items-center gap-1 font-label-xs text-label-xs text-primary font-semibold">
+<span class="material-symbols-outlined text-[14px] animate-spin">sync</span> In Sync
+                </span>
+<div class="w-5 h-5 rounded-full bg-secondary text-on-secondary text-[9px] font-bold flex items-center justify-center">SK</div>
+</div>
+</div>
+</div>
+<!-- Column 3: Review -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Code Review</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-label-xs text-label-xs text-on-surface-variant font-medium">1</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[16px]">more_horiz</span>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm hover:shadow transition-shadow cursor-grab">
+<div class="flex items-center justify-between text-label-xs font-label-xs text-outline mb-1">
+<span>TASK-99</span>
+<span class="px-1.5 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-semibold">Security</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface font-medium leading-snug">Stateless HttpOnly Cookie JWT verification middleware</p>
+<div class="mt-3 flex items-center justify-between">
+<span class="flex items-center gap-1 font-label-xs text-label-xs text-tertiary">
+<span class="material-symbols-outlined text-[14px]">chat_bubble</span> 4 comments
+                </span>
+<div class="w-5 h-5 rounded-full bg-tertiary-container text-on-tertiary text-[9px] font-bold flex items-center justify-center">RV</div>
+</div>
+</div>
+</div>
+<!-- Column 4: Done -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm font-bold text-tertiary">Done</span>
+<span class="px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-xs text-label-xs font-semibold">8</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[16px]">more_horiz</span>
+</div>
+<!-- Card 5 -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm opacity-85">
+<div class="flex items-center justify-between text-label-xs font-label-xs text-outline mb-1">
+<span>TASK-96</span>
+<span class="px-1.5 py-0.5 rounded bg-tertiary-fixed/30 text-on-tertiary font-medium">Shipped</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface font-medium line-through leading-snug">Dynamic CORS config with pre-flight caching</p>
+<div class="mt-3 flex items-center justify-between">
+<span class="flex items-center gap-1 font-label-xs text-label-xs text-tertiary">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Merged
+                </span>
+<div class="w-5 h-5 rounded-full bg-primary text-on-primary text-[9px] font-bold flex items-center justify-center">MK</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Metric Pulse Strip -->
+<div class="mt-space-md pt-space-md border-t border-surface-container flex flex-wrap items-center justify-between gap-space-md text-label-xs font-label-xs text-on-surface-variant">
+<div class="flex items-center gap-space-md">
+<span class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+              Ping: <span class="font-mono font-bold text-on-surface" id="pingCounter">38ms</span>
+</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-primary">swap_vert</span>
+              Socket events: <span class="font-mono font-bold text-on-surface" id="eventCount">1,492 / sec</span>
+</span>
+</div>
+<div class="flex items-center gap-space-sm font-mono text-outline">
+<span>MEM: 34.2MB</span>
+<span>•</span>
+<span>DOM PAINT: 11ms</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- LOGO CLOUD / TRUSTED BY -->
+<section class="w-full py-space-xl bg-surface-container-low border-y border-surface-container">
+<div class="max-w-6xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop text-center">
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold mb-space-lg">
+        Trusted by engineering leads and developers across modern tech teams
+      </p>
+<div class="flex flex-wrap items-center justify-center gap-8 md:gap-16 opacity-75 grayscale hover:grayscale-0 transition-all duration-300">
+<!-- Vercel -->
+<div class="flex items-center gap-2">
+<svg class="h-5 w-5 text-on-surface" fill="currentColor" viewbox="0 0 24 24">
+<path d="M12 1L24 22H0L12 1Z"></path>
+</svg>
+<span class="font-title-md text-title-md font-bold tracking-tight text-on-surface">Vercel</span>
+</div>
+<!-- Node.js -->
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[24px]">terminal</span>
+<span class="font-title-md text-title-md font-bold tracking-tight text-on-surface">Node.js</span>
+</div>
+<!-- MongoDB Atlas -->
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[24px]">database</span>
+<span class="font-title-md text-title-md font-bold tracking-tight text-on-surface">MongoDB Atlas</span>
+</div>
+<!-- Railway -->
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[24px]">train</span>
+<span class="font-title-md text-title-md font-bold tracking-tight text-on-surface">Railway</span>
+</div>
+<!-- Docker -->
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[24px]">deployed_code</span>
+<span class="font-title-md text-title-md font-bold tracking-tight text-on-surface">Docker</span>
+</div>
+<!-- Redis -->
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-error text-[24px]">layers</span>
+<span class="font-title-md text-title-md font-bold tracking-tight text-on-surface">Redis Cache</span>
+</div>
+</div>
+</div>
+</section>
+<!-- INTERACTIVE FEATURE BENTO GRID -->
+<section class="w-full py-24 px-margin md:px-margin-tablet lg:px-margin-desktop bg-surface">
+<div class="max-w-6xl mx-auto">
+<div class="flex flex-col items-center text-center mb-16">
+<span class="px-space-md py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-xs text-label-xs font-bold uppercase tracking-wider mb-space-sm">Architecture Capabilities</span>
+<h2 class="font-headline-xl text-headline-xl font-bold text-on-surface">Built for Pure Velocity, Zero Friction</h2>
+<p class="mt-space-sm font-body-lg text-body-lg text-on-surface-variant max-w-xl">Every layer is tuned to reduce cognitive load and latency for agile squads.</p>
+</div>
+<!-- Bento Grid Container -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- CARD 1: LARGE BENTO (2 Cols) -->
+<div class="md:col-span-2 bg-surface-container-lowest rounded-xl p-space-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden flex flex-col justify-between">
+<div class="absolute -right-10 -bottom-10 w-72 h-72 bg-primary/5 rounded-full blur-2xl pointer-events-none"></div>
+<div>
+<div class="flex items-center gap-space-sm mb-space-md">
+<div class="w-10 h-10 rounded-lg bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">sync_alt</span>
+</div>
+<span class="px-space-sm py-0.5 rounded bg-surface-container text-label-xs font-label-xs font-semibold text-on-surface-variant">WebSockets • &lt;150ms</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Duplex Multi-Client Real-Time Sync</h3>
+<p class="mt-space-sm font-body-md text-body-md text-on-surface-variant max-w-lg">
+              Authenticated Socket.IO rooms stream board mutations bi-directionally. When a developer moves an issue in Singapore, teammates in San Francisco see the task slide into place instantly with live avatar badges.
+            </p>
+</div>
+<!-- Interactive Duplex Visualizer -->
+<div class="mt-space-lg p-space-md bg-surface-container-low rounded-lg">
+<div class="flex flex-wrap items-center justify-between text-label-xs font-label-xs text-on-surface-variant mb-space-sm">
+<span class="font-bold text-on-surface">Live Payload Exchange</span>
+<span class="font-mono text-tertiary">ACK latency: 42ms</span>
+</div>
+<div class="space-y-2 font-mono text-[11px] leading-relaxed">
+<div class="p-2 rounded bg-surface-container-lowest text-on-surface flex items-center justify-between shadow-xs">
+<span class="text-primary font-bold">CLIENT_A → TASK_REORDER</span>
+<span class="text-outline">taskId: "65f2a1", pos: 3, status: "IN_REVIEW"</span>
+</div>
+<div class="p-2 rounded bg-primary text-on-primary flex items-center justify-between shadow-xs">
+<span class="font-bold">SERVER → BROADCAST_ROOM</span>
+<span class="text-on-primary/80">room: "proj_99", clients_notified: 4</span>
+</div>
+</div>
+</div>
+</div>
+<!-- CARD 2: GRANULAR RBAC -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed flex items-center justify-center text-secondary mb-space-md">
+<span class="material-symbols-outlined text-[24px]">shield_person</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Granular 4-Tier RBAC</h3>
+<p class="mt-space-sm font-body-md text-body-md text-on-surface-variant">
+              Zero-trust role-based access control safeguarding task mutations, board configurations, and team invites.
+            </p>
+</div>
+<!-- RBAC Badge Matrix -->
+<div class="mt-space-lg space-y-2">
+<div class="flex items-center justify-between p-2 rounded bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Owner</span>
+</div>
+<span class="font-label-xs text-label-xs text-outline">Billing • Delete Board</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Admin</span>
+</div>
+<span class="font-label-xs text-label-xs text-outline">Invite • Column Config</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Member</span>
+</div>
+<span class="font-label-xs text-label-xs text-outline">Edit Tasks • Assign</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Viewer</span>
+</div>
+<span class="font-label-xs text-label-xs text-outline">Read Only</span>
+</div>
+</div>
+</div>
+<!-- CARD 3: TASK CONTEXT & MENTIONS -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-tertiary-fixed flex items-center justify-center text-tertiary mb-space-md">
+<span class="material-symbols-outlined text-[24px]">alternate_email</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Context &amp; In-Task Mentions</h3>
+<p class="mt-space-sm font-body-md text-body-md text-on-surface-variant">
+              Side-drawer discussions with rich markdown support, file attachments, and real-time @mentions notifications.
+            </p>
+</div>
+<div class="mt-space-lg p-space-md bg-surface-container-low rounded-lg space-y-space-sm">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-primary text-[10px] text-on-primary font-bold flex items-center justify-center">AJ</div>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Alex Jin</span>
+<span class="font-label-xs text-label-xs text-outline">1m ago</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant bg-surface-container-lowest p-2 rounded">
+              Pushed fix to staging. <span class="text-primary font-bold">@Shivang</span> please verify the Socket reconnect handler!
+            </p>
+</div>
+</div>
+<!-- CARD 4: ZERO BLOAT VANILLA SPEED (2 Cols) -->
+<div class="md:col-span-2 bg-surface-container-lowest rounded-xl p-space-xl shadow-sm hover:shadow-md transition-shadow flex flex-col md:flex-row justify-between items-center gap-space-lg">
+<div class="max-w-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-on-surface mb-space-md">
+<span class="material-symbols-outlined text-[24px]">speed</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Zero-Bloat Vanilla Runtime Speed</h3>
+<p class="mt-space-sm font-body-md text-body-md text-on-surface-variant">
+              Engineered with pure ES6+ modules and zero runtime overhead. No 500KB JS bundle penalty. Instant initial paint, responsive event loops, and gentle battery consumption on mobile devices.
+            </p>
+</div>
+<!-- Benchmark Radial / Metric Card -->
+<div class="w-full md:w-auto flex-1 bg-surface-container-low p-space-md rounded-lg flex items-center justify-around gap-space-md">
+<div class="text-center">
+<div class="font-display-lg text-[2rem] font-bold text-primary">0.08s</div>
+<div class="font-label-xs text-label-xs text-on-surface-variant uppercase font-semibold">First Paint</div>
+</div>
+<div class="h-10 w-px bg-outline-variant"></div>
+<div class="text-center">
+<div class="font-display-lg text-[2rem] font-bold text-tertiary">&lt;28KB</div>
+<div class="font-label-xs text-label-xs text-on-surface-variant uppercase font-semibold">Gzipped Client</div>
+</div>
+<div class="h-10 w-px bg-outline-variant"></div>
+<div class="text-center">
+<div class="font-display-lg text-[2rem] font-bold text-secondary">60fps</div>
+<div class="font-label-xs text-label-xs text-on-surface-variant uppercase font-semibold">Card Drag</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ARCHITECTURE & TECH STACK HIGHLIGHTS -->
+<section class="w-full py-24 px-margin md:px-margin-tablet lg:px-margin-desktop bg-surface-container-low">
+<div class="max-w-5xl mx-auto">
+<div class="text-center mb-14">
+<span class="px-space-md py-1 rounded-full bg-surface-container text-on-surface font-label-xs text-label-xs font-bold uppercase tracking-wider mb-space-sm">Engineering Blueprints</span>
+<h2 class="font-headline-xl text-headline-xl font-bold text-on-surface">Built According to Production Specs</h2>
+<p class="mt-space-sm font-body-lg text-body-lg text-on-surface-variant">Explore the 4-layer architecture powering low-latency resilience.</p>
+</div>
+<!-- Architecture Interactive Tabs -->
+<div class="flex flex-wrap items-center justify-center gap-space-xs p-1.5 bg-surface-container rounded-xl max-w-xl mx-auto mb-space-xl">
+<button class="arch-tab-btn flex-1 py-2 px-space-md rounded-lg font-label-md text-label-md font-semibold transition-all bg-surface-container-lowest text-primary shadow-sm" id="btn-client" onclick="switchArchTab('client')">
+          Client Tier
+        </button>
+<button class="arch-tab-btn flex-1 py-2 px-space-md rounded-lg font-label-md text-label-md font-medium text-on-surface-variant transition-all hover:text-on-surface" id="btn-backend" onclick="switchArchTab('backend')">
+          Backend Tier
+        </button>
+<button class="arch-tab-btn flex-1 py-2 px-space-md rounded-lg font-label-md text-label-md font-medium text-on-surface-variant transition-all hover:text-on-surface" id="btn-security" onclick="switchArchTab('security')">
+          Security Layer
+        </button>
+<button class="arch-tab-btn flex-1 py-2 px-space-md rounded-lg font-label-md text-label-md font-medium text-on-surface-variant transition-all hover:text-on-surface" id="btn-database" onclick="switchArchTab('database')">
+          Database
+        </button>
+</div>
+<!-- Tab Contents Container -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-md min-h-[320px]">
+<!-- CLIENT PANE -->
+<div class="arch-pane grid grid-cols-1 md:grid-cols-2 gap-space-xl items-center" id="pane-client">
+<div class="space-y-space-md">
+<div class="inline-flex items-center gap-2 text-primary font-label-xs text-label-xs font-bold uppercase">
+<span class="material-symbols-outlined text-[18px]">html</span>
+              Vanilla ES6+ Client
+            </div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Native Drag &amp; Drop with Zero Dependencies</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Bypasses virtual DOM diffing by directly binding to HTML5 Drag-and-Drop events. Optimistic UI updates update column state instantaneously before Socket acknowledgment arrives.
+            </p>
+<ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check</span> Pure DOM Mutation Observer for live card sorting
+              </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check</span> Token-based atomic styles via CSS Custom Properties
+              </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check</span> Auto-reconnecting WebSocket socket.io-client wrapper
+              </li>
+</ul>
+</div>
+<div class="bg-surface-container-low p-space-lg rounded-lg font-mono text-body-sm text-on-surface space-y-2">
+<div class="text-outline text-label-xs font-label-xs">// Pure client-side drag listener</div>
+<div>card.addEventListener(<span class="text-secondary">'dragstart'</span>, (e) =&gt; {</div>
+<div class="pl-4">e.dataTransfer.setData(<span class="text-tertiary">'text/plain'</span>, task.id);</div>
+<div class="pl-4">socket.emit(<span class="text-primary">'task:dragging'</span>, { taskId: task.id });</div>
+<div>});</div>
+</div>
+</div>
+<!-- BACKEND PANE (Hidden initially) -->
+<div class="arch-pane hidden grid grid-cols-1 md:grid-cols-2 gap-space-xl items-center" id="pane-backend">
+<div class="space-y-space-md">
+<div class="inline-flex items-center gap-2 text-primary font-label-xs text-label-xs font-bold uppercase">
+<span class="material-symbols-outlined text-[18px]">dns</span>
+              Express.js v4.19 + Socket.IO v4.7
+            </div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Hardened Micro-Core Server</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Protected with Helmet security headers, rate limiting (100 req/15min on auth endpoints), and strict CORS origin validation. Duplex communication routed via Redis adapter for multi-instance horizontal scaling.
+            </p>
+<ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check</span> Dynamic Socket.IO rooms partitioned by Project ID
+              </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check</span> Express Route Controller pattern with Joi schemas
+              </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check</span> Zero unhandled promise rejections with global error boundary
+              </li>
+</ul>
+</div>
+<div class="bg-surface-container-low p-space-lg rounded-lg font-mono text-body-sm text-on-surface space-y-2">
+<div class="text-outline text-label-xs font-label-xs">// Socket room broadcasting</div>
+<div>io.to(`project:${projectId}`).emit(<span class="text-primary">'task:updated'</span>, {</div>
+<div class="pl-4">taskId,</div>
+<div class="pl-4">newPosition,</div>
+<div class="pl-4">updatedBy: socket.user.id</div>
+<div>});</div>
+</div>
+</div>
+<!-- SECURITY PANE (Hidden initially) -->
+<div class="arch-pane hidden grid grid-cols-1 md:grid-cols-2 gap-space-xl items-center" id="pane-security">
+<div class="space-y-space-md">
+<div class="inline-flex items-center gap-2 text-primary font-label-xs text-label-xs font-bold uppercase">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+              Stateless JWT + bcrypt-12
+            </div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Enterprise-Grade Zero-Trust Layer</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Tokens stored securely in HttpOnly, SameSite=Strict cookies preventing XSS token exfiltration. Passwords hashed using bcrypt with 12 salt rounds.
+            </p>
+<ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check</span> WebSocket handshake auth verified via cookie session
+              </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check</span> Role verification on every Socket &amp; REST mutation
+              </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check</span> Automated token expiration and sliding window refresh
+              </li>
+</ul>
+</div>
+<div class="bg-surface-container-low p-space-lg rounded-lg font-mono text-body-sm text-on-surface space-y-2">
+<div class="text-outline text-label-xs font-label-xs">// Cookie security options</div>
+<div>res.cookie(<span class="text-secondary">'jwt'</span>, token, {</div>
+<div class="pl-4">httpOnly: <span class="text-tertiary">true</span>,</div>
+<div class="pl-4">secure: process.env.NODE_ENV === <span class="text-primary">'production'</span>,</div>
+<div class="pl-4">sameSite: <span class="text-secondary">'Strict'</span></div>
+<div>});</div>
+</div>
+</div>
+<!-- DATABASE PANE (Hidden initially) -->
+<div class="arch-pane hidden grid grid-cols-1 md:grid-cols-2 gap-space-xl items-center" id="pane-database">
+<div class="space-y-space-md">
+<div class="inline-flex items-center gap-2 text-primary font-label-xs text-label-xs font-bold uppercase">
+<span class="material-symbols-outlined text-[18px]">storage</span>
+              MongoDB Atlas Compound Indexing
+            </div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Optimized Query Paths &amp; Atomic Updates</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Task queries leverage compound indexes on <code class="bg-surface-container px-1 py-0.5 rounded font-mono text-body-sm">{project: 1, status: 1, position: 1}</code> for instantaneous sub-10ms board loads even with 50,000+ active backlog cards.
+            </p>
+<ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check</span> Bulk operations with Ordered: false for drag ordering
+              </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check</span> Embedded task audit histories without N+1 query costs
+              </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check</span> Automated TTL collections for ephemeral sync sessions
+              </li>
+</ul>
+</div>
+<div class="bg-surface-container-low p-space-lg rounded-lg font-mono text-body-sm text-on-surface space-y-2">
+<div class="text-outline text-label-xs font-label-xs">// Index definition schema</div>
+<div>taskSchema.index({</div>
+<div class="pl-4">projectId: 1,</div>
+<div class="pl-4">status: 1,</div>
+<div class="pl-4">position: 1</div>
+<div>});</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- TRANSPARENT DEVELOPER & TEAM PRICING -->
+<section class="w-full py-24 px-margin md:px-margin-tablet lg:px-margin-desktop bg-surface" id="pricing">
+<div class="max-w-6xl mx-auto">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="px-space-md py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-xs text-label-xs font-bold uppercase tracking-wider mb-space-sm">Simple, Scalable Pricing</span>
+<h2 class="font-headline-xl text-headline-xl font-bold text-on-surface">Predictable Plans for Modern Engineering</h2>
+<p class="mt-space-sm font-body-lg text-body-lg text-on-surface-variant">Start entirely free. Upgrade only when your engineering headcount and throughput scales.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg items-stretch">
+<!-- Hobby / Free Tier -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface mb-2">Hobby / Starter</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">Perfect for side projects, open source, and indie developers.</p>
+<div class="flex items-baseline gap-1 mb-6">
+<span class="font-display-lg text-display-lg font-bold text-on-surface">$0</span>
+<span class="font-body-md text-body-md text-outline">/ forever</span>
+</div>
+<div class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span>
+<span>Up to 3 active projects</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span>
+<span>Up to 10 team members</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span>
+<span>Full real-time Socket.IO sync</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span>
+<span>Community Discord support</span>
+</div>
+</div>
+</div>
+<a class="mt-8 block w-full text-center py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold transition-colors" href="#">
+            Get Started Free
+          </a>
+</div>
+<!-- Pro Team (Most Popular) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-xl flex flex-col justify-between relative ring-2 ring-primary">
+<div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-primary text-on-primary font-label-xs text-label-xs font-bold uppercase tracking-wider shadow">
+            Most Popular
+          </div>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface mb-2">Pro Team</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">Designed for high-output product &amp; engineering teams.</p>
+<div class="flex items-baseline gap-1 mb-6">
+<span class="font-display-lg text-display-lg font-bold text-on-surface">$12</span>
+<span class="font-body-md text-body-md text-outline">/ user / mo</span>
+</div>
+<div class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span class="font-semibold text-on-surface">Unlimited projects &amp; tasks</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span>Granular 4-tier RBAC roles</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span>Priority Socket throughput</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span>Task audit &amp; activity history</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span>Email &amp; Slack integration alerts</span>
+</div>
+</div>
+</div>
+<a class="mt-8 block w-full text-center py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold transition-all shadow-[0_4px_15px_rgba(70,72,212,0.3)]" href="#">
+            Start 14-Day Free Pro Trial
+          </a>
+</div>
+<!-- Enterprise -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface mb-2">Enterprise</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">Complete data control and custom security requirements.</p>
+<div class="flex items-baseline gap-1 mb-6">
+<span class="font-display-lg text-display-lg font-bold text-on-surface">$29</span>
+<span class="font-body-md text-body-md text-outline">/ user / mo</span>
+</div>
+<div class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span>
+<span>Dedicated MongoDB Atlas cluster</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span>
+<span>SAML 2.0 &amp; Okta SSO integration</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span>
+<span>Custom audit export for SOC2</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span>
+<span>99.99% Uptime SLA guarantee</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span>
+<span>Dedicated Customer Success Lead</span>
+</div>
+</div>
+</div>
+<a class="mt-8 block w-full text-center py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold transition-colors" href="#">
+            Contact Enterprise Sales
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- CALL TO ACTION & SIGNUP BANNER -->
+<section class="w-full py-20 px-margin md:px-margin-tablet lg:px-margin-desktop bg-surface-container-low relative overflow-hidden">
+<div class="max-w-4xl mx-auto rounded-2xl bg-gradient-to-tr from-primary via-primary-container to-secondary p-space-xl md:p-14 text-center text-on-primary shadow-2xl relative">
+<!-- Decorative rings -->
+<div class="absolute -top-16 -left-16 w-60 h-60 rounded-full bg-white/10 blur-xl pointer-events-none"></div>
+<div class="absolute -bottom-16 -right-16 w-60 h-60 rounded-full bg-tertiary-fixed/20 blur-xl pointer-events-none"></div>
+<div class="relative z-10">
+<h2 class="font-headline-xl text-headline-xl font-bold tracking-tight text-white mb-space-md">
+          Ready to elevate your engineering workflow?
+        </h2>
+<p class="font-body-lg text-body-lg text-white/90 max-w-xl mx-auto mb-space-xl">
+          Join thousands of developers tracking tasks with zero latency, live real-time sockets, and crystal-clear visibility.
+        </p>
+<!-- Quick email input -->
+<form class="flex flex-col sm:flex-row items-center justify-center gap-space-sm max-w-md mx-auto" onsubmit="handleSignup(event)">
+<input class="w-full px-space-md py-3 rounded-lg text-on-surface bg-white placeholder-on-surface-variant/60 font-body-md text-body-md focus:outline-none shadow-inner" placeholder="Enter your work email..." required="" type="email"/>
+<button class="w-full sm:w-auto shrink-0 px-6 py-3 rounded-lg bg-on-primary text-primary font-label-md text-label-md font-bold hover:bg-surface-container transition-all shadow-md" type="submit">
+            Get Started
+          </button>
+</form>
+<p class="mt-space-md font-label-xs text-label-xs text-white/80">
+          No credit card required • Free forever tier available • Set up in under 60 seconds
+        </p>
+</div>
+</div>
+</section>
+<!-- Interactive Logic for Demo Sockets & Tabs -->
+<script>
+    function switchArchTab(tabId) {
+      document.querySelectorAll('.arch-pane').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.arch-tab-btn').forEach(btn => {
+        btn.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+        btn.classList.add('text-on-surface-variant');
+      });
+
+      const activePane = document.getElementById('pane-' + tabId);
+      const activeBtn = document.getElementById('btn-' + tabId);
+
+      if (activePane) activePane.classList.remove('hidden');
+      if (activeBtn) {
+        activeBtn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+        activeBtn.classList.remove('text-on-surface-variant');
+      }
+    }
+
+    function simulateSocketEvent() {
+      const cursor = document.getElementById('liveCursor');
+      const card = document.getElementById('simulatedTaskCard');
+      const pingEl = document.getElementById('pingCounter');
+      const eventCountEl = document.getElementById('eventCount');
+
+      if (!cursor || !card) return;
+
+      // Animate cursor movement
+      cursor.style.transform = 'translate(120px, 45px)';
+      card.classList.add('bg-surface-container-high', 'scale-105');
+
+      setTimeout(() => {
+        cursor.style.transform = 'translate(0px, 0px)';
+        card.classList.remove('bg-surface-container-high', 'scale-105');
+        
+        // Randomize micro-metrics to simulate real Socket connection
+        if (pingEl) pingEl.textContent = (Math.floor(Math.random() * 25) + 20) + 'ms';
+        if (eventCountEl) eventCountEl.textContent = (Math.floor(Math.random() * 300) + 1400) + ' / sec';
+      }, 700);
+    }
+
+    function handleSignup(e) {
+      e.preventDefault();
+      alert('Welcome to TaskFlow! Directing to workspace provisioning...');
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low shadow-[0_-1px_8px_rgba(0,0,0,0.02)]"><div class="w-full max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl pb-space-xl"><div class="lg:col-span-2 space-y-space-md"><div class="flex items-center gap-space-sm"><div class="w-7 h-7 rounded-lg bg-gradient-to-tr from-primary to-secondary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[16px]">splitscreen</span></div><span class="font-title-md text-title-md font-semibold text-on-surface tracking-tight">TaskFlow</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">High-velocity collaborative project management engineered for cross-functional product teams, engineering squads, and modern operators.</p><div class="inline-flex items-center gap-space-sm px-space-md py-space-xs rounded-lg bg-surface-container text-on-surface"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-sm text-label-sm font-medium">All systems operational</span></div></div><div class="space-y-space-md"><p class="font-label-md text-label-md font-semibold text-on-surface tracking-wider uppercase">Product</p><ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" data-path="features" href="#">Interactive Kanban</a></li><li><a class="hover:text-on-surface transition-colors" data-path="architecture" href="#">Real-time Engine</a></li><li><a class="hover:text-on-surface transition-colors" data-path="live-demo" href="../kanban/index.html">Live Interactive Demo</a></li><li><a class="hover:text-on-surface transition-colors" data-path="pricing" href="#">Pricing Tiers</a></li></ul></div><div class="space-y-space-md"><p class="font-label-md text-label-md font-semibold text-on-surface tracking-wider uppercase">Resources</p><ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" data-path="documentation" href="../../README.md">Documentation</a></li><li><a class="hover:text-on-surface transition-colors" data-path="documentation" href="../../README.md">API Reference</a></li><li><a class="hover:text-on-surface transition-colors" data-path="architecture" href="#">System Architecture</a></li><li><a class="hover:text-on-surface transition-colors" data-path="live-demo" href="../kanban/index.html">Release Notes</a></li></ul></div><div class="space-y-space-md"><p class="font-label-md text-label-md font-semibold text-on-surface tracking-wider uppercase">Trust &amp; Legal</p><ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant"><li><div class="inline-flex items-center gap-space-xs font-label-xs text-label-xs bg-surface-container px-space-sm py-space-xs rounded text-on-surface"><span class="material-symbols-outlined text-[14px] text-primary">verified_user</span><span>SOC2 Certified</span></div></li><li><div class="inline-flex items-center gap-space-xs font-label-xs text-label-xs bg-surface-container px-space-sm py-space-xs rounded text-on-surface"><span class="material-symbols-outlined text-[14px] text-tertiary">code</span><span>Open Core AGPL</span></div></li><li><a class="hover:text-on-surface transition-colors block mt-space-sm" data-path="product" href="#">Privacy Policy</a></li><li><a class="hover:text-on-surface transition-colors block" data-path="product" href="#">Terms of Service</a></li></ul></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-on-surface-variant"><p>© 2025 TaskFlow Technologies Inc. All rights reserved.</p><p class="font-label-xs text-label-xs text-outline">Crafted for precision, low latency, and team focus.</p></div></div></footer></body></html>

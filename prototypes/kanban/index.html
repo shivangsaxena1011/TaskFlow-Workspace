@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-fixed-variant":"#2f2ebe","on-surface":"#131b2e","on-error-container":"#93000a","on-surface-variant":"#464554","secondary-fixed":"#e9ddff","surface-dim":"#d2d9f4","primary-fixed":"#e1e0ff","on-secondary-fixed-variant":"#5516be","on-primary":"#ffffff","inverse-on-surface":"#eef0ff","tertiary-container":"#008096","surface-bright":"#faf8ff","secondary-fixed-dim":"#d0bcff","on-background":"#131b2e","tertiary":"#006577","surface-variant":"#dae2fd","on-primary-fixed":"#07006c","surface-container":"#eaedff","surface":"#faf8ff","on-tertiary-fixed":"#001f26","outline":"#767586","on-tertiary":"#ffffff","surface-container-highest":"#dae2fd","on-tertiary-fixed-variant":"#004e5c","surface-container-high":"#e2e7ff","surface-tint":"#494bd6","surface-container-lowest":"#ffffff","on-error":"#ffffff","outline-variant":"#c7c4d7","primary-fixed-dim":"#c0c1ff","secondary-container":"#8455ef","error":"#ba1a1a","surface-container-low":"#f2f3ff","tertiary-fixed":"#acedff","background":"#faf8ff","error-container":"#ffdad6","on-tertiary-container":"#f9fdff","on-secondary-container":"#fffbff","primary-container":"#6063ee","secondary":"#6b38d4","on-secondary":"#ffffff","inverse-primary":"#c0c1ff","on-primary-container":"#fffbff","tertiary-fixed-dim":"#4cd7f6","inverse-surface":"#283044","on-secondary-fixed":"#23005c","primary":"#4648d4"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xl":"1.5rem","gutter-tablet":"1.25rem","margin-desktop":"2rem","margin-tablet":"1.5rem","space-sm":"0.5rem","space-lg":"1rem","gutter":"1rem","space-md":"0.75rem","margin":"1rem","space-xs":"0.25rem","gutter-desktop":"1.5rem"},"fontFamily":{"label-sm":["Inter"],"body-lg":["Inter"],"label-xs":["Inter"],"label-md":["Inter"],"headline-xl":["Inter"],"body-md":["Inter"],"headline-sm":["Inter"],"display-lg":["Inter"],"body-sm":["Inter"],"title-md":["Inter"],"headline-lg":["Inter"],"headline-xl-mobile":["Inter"]},"fontSize":{"label-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.01em","fontWeight":"500"}],"body-lg":["1rem",{"lineHeight":"1.5rem","letterSpacing":"-0.005em","fontWeight":"400"}],"label-xs":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.02em","fontWeight":"600"}],"label-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0.005em","fontWeight":"500"}],"headline-xl":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.02em","fontWeight":"600"}],"body-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0em","fontWeight":"400"}],"headline-sm":["1.25rem",{"lineHeight":"1.75rem","letterSpacing":"-0.01em","fontWeight":"600"}],"display-lg":["3rem",{"lineHeight":"3.5rem","letterSpacing":"-0.025em","fontWeight":"700"}],"body-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0em","fontWeight":"400"}],"title-md":["1.125rem",{"lineHeight":"1.5rem","letterSpacing":"-0.01em","fontWeight":"500"}],"headline-lg":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-xl-mobile":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"-0.015em","fontWeight":"600"}]}}}</script></head><body class="bg-surface text-on-surface font-body-md text-body-md"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col justify-between border-r border-outline-variant/30 shadow-[0_1px_8px_rgba(0,0,0,0.02)]"><div class="flex flex-col flex-1 overflow-y-auto"><div class="p-space-lg flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="TaskFlow Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD43GJzwcW3RngNKDw1M8VYWwAfKzWbyAxeqODyC0HjmrOoszsqujYIn9OYZukTfnRH64p3sTz25M3deTd_wnHAq1YyviBwBvzxW5LSLlDiYxrJZJ37U4o1aTUnl6y8xAibO8rnVyHSpwzukIhFQDcEff6Mp1uMAGBXiJOcW4qyxIpGsFmufH2KTfId8aYLpyMz-i0z_v_PUliHeZitOFbtKswpqpH1YfDZTcvH9K4"/><span class="font-title-md text-title-md font-bold tracking-tight text-on-surface">TaskFlow</span><span class="px-1.5 py-0.5 rounded-lg bg-primary-container text-on-primary-container font-label-xs text-label-xs font-semibold uppercase tracking-wider">PRO</span></div></div><div class="px-space-md mb-space-sm"><button class="w-full flex items-center justify-between p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors text-left" type="button"><div class="flex items-center gap-space-xs min-w-0"><span class="material-symbols-outlined text-primary text-xl">corporate_fare</span><div class="min-w-0"><div class="font-label-xs text-label-xs text-on-surface-variant truncate uppercase tracking-wider font-semibold">Workspace</div><div class="font-label-md text-label-md text-on-surface font-semibold truncate">Acme Engineering</div></div></div><span class="material-symbols-outlined text-on-surface-variant text-base">unfold_more</span></button></div><div class="px-space-md py-space-xs"><div class="font-label-xs text-label-xs font-semibold uppercase tracking-wider text-on-surface-variant px-space-sm py-space-xs">Platform</div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="dashboard" href="../dashboard/index.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-xl">dashboard</span><span class="font-label-md text-label-md">Dashboard</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="projects" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-xl">folder_open</span><span class="font-label-md text-label-md">Projects</span></div><span class="material-symbols-outlined text-sm text-on-surface-variant">expand_more</span></a><div class="pl-8 pr-space-xs flex flex-col gap-1 py-1"><a aria-current="page" class="flex items-center gap-2 py-1 bg-primary-container text-on-primary-container font-semibold rounded-lg" data-path="website-redesign" href="index.html"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span><span class="truncate">Website Redesign</span></a><a class="flex items-center gap-2 py-1 text-on-surface-variant hover:text-on-surface text-body-sm font-body-sm" data-path="mobile-app-api" href="#"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span class="truncate">Mobile App API</span></a><a class="flex items-center gap-2 py-1 text-on-surface-variant hover:text-on-surface text-body-sm font-body-sm" data-path="cloud-migration" href="#"><span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span><span class="truncate">Cloud Migration</span></a></div><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="my-tasks" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-xl">check_circle</span><span class="font-label-md text-label-md">My Tasks</span></div><span class="px-1.5 py-0.5 rounded-lg bg-surface-container-high text-on-surface font-label-xs text-label-xs font-semibold">8</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="notifications" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-xl">notifications</span><span class="font-label-md text-label-md">Notifications</span></div><span class="px-1.5 py-0.5 rounded-lg bg-error text-on-error font-label-xs text-label-xs font-semibold">3</span></a></nav></div><div class="px-space-md py-space-xs"><div class="font-label-xs text-label-xs font-semibold uppercase tracking-wider text-on-surface-variant px-space-sm py-space-xs">Workspace Admin</div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="team-and-rbac-members" href="#"><span class="material-symbols-outlined text-xl">group</span><span class="font-label-md text-label-md">Team &amp; RBAC</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="analytics-and-velocity" href="#"><span class="material-symbols-outlined text-xl">insights</span><span class="font-label-md text-label-md">Analytics &amp; Velocity</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-xl">settings</span><span class="font-label-md text-label-md">Settings</span></a></nav></div></div><div class="p-space-md border-t border-outline-variant/30 bg-surface-container-low"><div class="flex items-center justify-between p-space-xs rounded-lg hover:bg-surface-container transition-colors"><div class="flex items-center gap-space-xs min-w-0"><img alt="Shivang Saxena" class="w-9 h-9 rounded-full object-cover border border-outline-variant/40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAndK_MBeY6vttIXON-_dmebPZfDxDazfpvI8mrLcnano_UoFpUDpA5qN6xdJqcWgSIy_MgP-SxVLEV2oDiGMTqYmyVMw9ugCS2UZAXgq0DqOHTkEhpz2tmMlUdZbeHLKnSKfyi3IOzPwkQgmllP-qENbmAEEHeeoLRcoVH5xIZoxh4iXFBdoUPo_oHj1-0SFWPpW0mMlcoRmqcczrFT9E_dcWFwfMFZhoQixVqa0"/><div class="min-w-0"><div class="font-label-md text-label-md text-on-surface font-semibold truncate">Shivang Saxena</div><div class="font-label-xs text-label-xs text-primary font-medium truncate">Owner</div></div></div><div class="flex items-center"><a class="p-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-lg">manage_accounts</span></a><button class="p-1 text-on-surface-variant hover:text-error transition-colors" title="Logout" type="button"><span class="material-symbols-outlined text-lg">logout</span></button></div></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/85 backdrop-blur-xl border-b border-outline-variant/30 shadow-[0_1px_8px_rgba(0,0,0,0.02)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md"><div class="flex items-center gap-1.5 font-label-md text-label-md text-on-surface-variant"><span class="hover:text-on-surface transition-colors">Acme Engineering</span><span class="material-symbols-outlined text-base">chevron_right</span><span class="font-semibold text-on-surface">Core Team</span></div><div class="h-4 w-px bg-outline-variant/50"></div><div class="flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container border border-outline-variant/20 font-label-xs text-label-xs text-on-surface"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary-fixed-dim opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-tertiary"></span></span><span class="font-medium">Live Connected</span></div></div><div class="flex items-center gap-space-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-lg pointer-events-none">search</span><input class="w-64 pl-9 pr-14 py-1.5 rounded-lg bg-surface-container-low border border-outline-variant/40 text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" placeholder="Search tasks, docs, epics..." type="text"/><kbd class="absolute right-2 px-1.5 py-0.5 rounded bg-surface-container-high border border-outline-variant/40 font-label-xs text-label-xs text-on-surface-variant font-mono">⌘K</kbd></div><button class="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md border border-outline-variant/30" type="button"><span class="material-symbols-outlined text-base">group_add</span><span>Invite</span></button><button class="flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary transition-colors font-label-md text-label-md font-semibold shadow-sm" type="button"><span class="material-symbols-outlined text-base">add</span><span>New Task</span></button><div class="relative"><button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors relative" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-error ring-2 ring-surface"></span></button></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover border border-outline-variant/50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAndK_MBeY6vttIXON-_dmebPZfDxDazfpvI8mrLcnano_UoFpUDpA5qN6xdJqcWgSIy_MgP-SxVLEV2oDiGMTqYmyVMw9ugCS2UZAXgq0DqOHTkEhpz2tmMlUdZbeHLKnSKfyi3IOzPwkQgmllP-qENbmAEEHeeoLRcoVH5xIZoxh4iXFBdoUPo_oHj1-0SFWPpW0mMlcoRmqcczrFT9E_dcWFwfMFZhoQixVqa0"/></div></header><main class="relative pt-16 w-full px-space-lg min-h-screen bg-surface"><div class="flex flex-col w-full">
+<!-- Top Project Banner & Command Area -->
+<div class="flex flex-col gap-space-md py-space-md">
+<!-- Sub-header Level 1: Project Metadata & Team Bar -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-primary-container/15 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">view_kanban</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<h1 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Website Redesign &amp; Launch</h1>
+<button class="text-on-surface-variant hover:text-amber-500 transition-colors p-1" title="Favorite" type="button">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1; color: #f59e0b;">star</span>
+</button>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-xs text-label-xs font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">lock</span>
+              Private Workspace
+            </span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<span class="flex items-center gap-1 text-primary font-medium">
+<span class="material-symbols-outlined text-sm">schedule</span> Sprint 4 (Oct 24 - Nov 7)
+            </span>
+<span>•</span>
+<span>14 Tasks Total</span>
+<span>•</span>
+<span class="text-tertiary font-medium">68% Velocity Complete</span>
+</div>
+</div>
+</div>
+<!-- Right: Team avatars and fast invite -->
+<div class="flex items-center gap-space-md flex-wrap">
+<div class="flex items-center -space-x-2">
+<div class="relative group cursor-pointer" title="Shivang Saxena (Owner)">
+<img class="w-8 h-8 rounded-full ring-2 ring-surface-container-lowest object-cover" data-alt="Portrait photo of Shivang Saxena, creative director with neat hairstyle in a well-lit minimal design studio with indigo tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLFr3OvG6KKjKvb1JNTcXZj5JVt01I5aVbgBA39fboac_QXtdwWQV9BXaMk4cl08OQ555KDzyY_gYtnf5YgPYAOCibcw-goG61jGqDfSrC8Sl0nW8JD3QR-i9xeOYcRlC1-4wZilf4DvOAtCZyKKfB5Of3FJtZuil0hWPAWJ5YIb_VgBAhu9bmSxw4tXAZYukFoqvX2zupSa9dQFupp0wXH5gzUOZBOogTr1Kh_ug"/>
+<span class="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-amber-500 ring-1 ring-surface" title="Owner"></span>
+</div>
+<div class="relative group cursor-pointer" title="Shivansh Gupta (Admin)">
+<img class="w-8 h-8 rounded-full ring-2 ring-surface-container-lowest object-cover" data-alt="Portrait photo of Shivansh Gupta, software lead engineer in modern spectacles and graphite tee in tech agency office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCV7odJjZDjHg8s5ZUZWywggmagl4tcCJsLRqJt1pgPQD7zpJ2hVk4gxFaUQUDj4wkT3YXIp5fK-2rthZ7sPIWK9BnM9jEUWKChKvgFy_IVmnPUK90FGJrMDrL9qcIZ1QlmFLsuwDD6zwA5bvxRmI2jiwAL578T-3bAo0TiqVZPDpVhE4WqDnCf8Wx633D4Ar1P39wIyLwzzWXo34QuGzz2geC9x2Awm_Iw2rXbYsU"/>
+<span class="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-primary ring-1 ring-surface" title="Admin"></span>
+</div>
+<div class="relative group cursor-pointer" title="Adarsh Verma (Member)">
+<img class="w-8 h-8 rounded-full ring-2 ring-surface-container-lowest object-cover" data-alt="Portrait of Adarsh Verma, QA and full-stack developer with friendly smile smiling against clean modern studio backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYdEFTgkccxxGJHWsZpCIz-2qQQyL_pEzgAo1jEHgauYwBNrQWaW6G8lvvGo7gh9QRSPCg8frzO0n9nyQGzzniQPoGAuEtLOtS9jX6xU7twz_GNflhDVwobWn5XiC5UUXzVTDv_5EPU4F4tR3ISJD6HRjdaC-98LQzqVD6hiEgfErXQaeNVYKuK-mHf12v5G2KJI2_y7Yft8Jc5XwDjuwlD7cydVb_vC0VSa3lg9k"/>
+<span class="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-tertiary ring-1 ring-surface" title="Member"></span>
+</div>
+<div class="relative group cursor-pointer" title="Neha Singh (Viewer)">
+<img class="w-8 h-8 rounded-full ring-2 ring-surface-container-lowest object-cover" data-alt="Portrait photo of Neha Singh, UI product designer with sleek dark hair smiling confidently in modern workspace" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7mD0ZX-VahR9TqoVHBix9e6p99w5QXKay3ptYy3jObdGKqNWtGTWqUoCq0skMYr65Cd8JC23ikNPKZiCmiEjaDsW7SWAc_rMAj4mvKIytpbBLkCa8C1KIXKg4OhgXfJv7FCOA0HM4Qi_IhSwnH5YAG5MkGGUwnJTZ600rBaKrudumUStWAG4Oay961E80OWInCNWUwFQapLgikNrCDpHvcp332_PoACfQmB_lSII"/>
+<span class="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-surface-variant ring-1 ring-surface" title="Viewer"></span>
+</div>
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-label-xs text-label-xs font-semibold ring-2 ring-surface-container-lowest">
+            +3
+          </div>
+</div>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary font-label-md text-label-md transition-colors" id="inviteBtn" type="button">
+<span class="material-symbols-outlined text-base">person_add</span>
+<span>Invite Member</span>
+</button>
+</div>
+</div>
+<!-- Sub-header Level 2: View Tabs & Filter Toolbar -->
+<div class="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-space-md">
+<!-- Tabs Navigation -->
+<nav class="flex items-center gap-1 p-1 bg-surface-container-lowest rounded-lg shadow-sm">
+<button class="flex items-center gap-1.5 px-3.5 py-1.5 rounded bg-primary text-on-primary font-label-md text-label-md font-semibold transition-all" type="button">
+<span class="material-symbols-outlined text-base">view_kanban</span>
+<span>Board</span>
+<span class="ml-1 px-1.5 py-0.2 rounded-full bg-on-primary/20 text-on-primary font-label-xs text-label-xs">14</span>
+</button>
+<button class="flex items-center gap-1.5 px-3.5 py-1.5 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-label-md text-label-md transition-all" type="button">
+<span class="material-symbols-outlined text-base">format_list_bulleted</span>
+<span>List</span>
+</button>
+<button class="flex items-center gap-1.5 px-3.5 py-1.5 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-label-md text-label-md transition-all" type="button">
+<span class="material-symbols-outlined text-base">calendar_month</span>
+<span>Calendar</span>
+</button>
+<button class="flex items-center gap-1.5 px-3.5 py-1.5 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-label-md text-label-md transition-all" type="button">
+<span class="material-symbols-outlined text-base">dynamic_feed</span>
+<span>Activity Feed</span>
+</button>
+<button class="flex items-center gap-1.5 px-3.5 py-1.5 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-label-md text-label-md transition-all" type="button">
+<span class="material-symbols-outlined text-base">tune</span>
+<span>Settings</span>
+</button>
+</nav>
+<!-- Filter Controls and CTA -->
+<div class="flex items-center gap-2 flex-wrap">
+<div class="relative flex items-center min-w-[200px] flex-1 sm:flex-initial">
+<span class="material-symbols-outlined absolute left-2.5 text-on-surface-variant text-base pointer-events-none">filter_list</span>
+<input class="w-full pl-8 pr-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm shadow-sm focus:outline-none focus:ring-1 focus:ring-primary transition-all" id="taskSearchInput" placeholder="Filter tasks or #tags..." type="text"/>
+</div>
+<!-- Filter: Assignee -->
+<div class="relative">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container-low transition-colors" type="button">
+<span class="material-symbols-outlined text-base text-on-surface-variant">person</span>
+<span>Assignee</span>
+<span class="material-symbols-outlined text-sm text-on-surface-variant">expand_more</span>
+</button>
+</div>
+<!-- Filter: Priority -->
+<div class="relative">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container-low transition-colors" type="button">
+<span class="material-symbols-outlined text-base text-on-surface-variant">flag</span>
+<span>Priority</span>
+<span class="material-symbols-outlined text-sm text-on-surface-variant">expand_more</span>
+</button>
+</div>
+<button class="flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold shadow transition-all active:scale-95" id="addNewTaskBtn" type="button">
+<span class="material-symbols-outlined text-base">add</span>
+<span>Add Task</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Main Canvas: Board Columns + Contextual Detail Drawer -->
+<div class="relative flex items-start gap-space-lg w-full pb-12 overflow-x-auto">
+<!-- Kanban Columns Grid -->
+<div class="flex-1 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md min-w-[960px] xl:min-w-0 transition-all duration-300" id="boardColumnsContainer">
+<!-- COLUMN 1: TO DO -->
+<div class="flex flex-col bg-surface-container-low/70 rounded-xl p-space-sm h-[calc(100vh-190px)] min-h-[620px]">
+<div class="flex items-center justify-between px-2 py-1.5 mb-2">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-outline"></span>
+<h2 class="font-label-md text-label-md font-semibold text-on-surface">To Do</h2>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-xs text-label-xs font-bold">4</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="Quick Add" type="button">
+<span class="material-symbols-outlined text-lg">add</span>
+</button>
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">more_horiz</span>
+</button>
+</div>
+</div>
+<!-- Task Cards Stack -->
+<div class="flex flex-col gap-2.5 overflow-y-auto pr-1 flex-1">
+<!-- Card 1 -->
+<div class="task-card group p-3.5 bg-surface-container-lowest rounded-lg shadow-sm hover:shadow-md cursor-pointer transition-all duration-200" data-task-id="TASK-101">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-xs text-label-xs font-mono font-semibold text-on-surface-variant">TASK-101</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-xs text-label-xs font-medium">Low</span>
+</div>
+<h3 class="font-body-md text-body-md font-medium text-on-surface mb-2 leading-snug group-hover:text-primary transition-colors">Write User Documentation &amp; API Guide</h3>
+<div class="flex flex-wrap gap-1.5 mb-3">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-low text-on-surface-variant font-label-xs text-label-xs">#docs</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-low text-on-surface-variant font-label-xs text-label-xs">#phase1</span>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-center gap-3 text-on-surface-variant font-label-xs text-label-xs">
+<span class="flex items-center gap-1 text-on-surface-variant/80">
+<span class="material-symbols-outlined text-sm">chat_bubble_outline</span> 2
+                </span>
+<span class="flex items-center gap-1 text-on-surface-variant/80">
+<span class="material-symbols-outlined text-sm">attach_file</span> 1
+                </span>
+<span class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">calendar_today</span> Nov 8
+                </span>
+</div>
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Small circular headshot of developer with glasses and slight smile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4WRIQJYACXczyH_VGZ7p_BIE15ID9oAZeXczoqe9ofsxu4xqymJmNuWMmCiTUVucW9FPycFxZXPqQs1YvkG-t4xOXolJ-LBSk91EUv-s3beWsmW_xrbJWofVr_1Q4xza3VXp9mTnZhcY9MJnOXmt0oglltNacPxE6TLXJmI4BKX3rfxYaMXIRWYTXQ5li1q2f-D-xQr1D0FWdG1wb03StZVDAiK6n6yOoNVu-Xco"/>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="task-card group p-3.5 bg-surface-container-lowest rounded-lg shadow-sm hover:shadow-md cursor-pointer transition-all duration-200" data-task-id="TASK-102">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-xs text-label-xs font-mono font-semibold text-on-surface-variant">TASK-102</span>
+<span class="px-2 py-0.5 rounded bg-error/15 text-error font-label-xs text-label-xs font-semibold">High</span>
+</div>
+<h3 class="font-body-md text-body-md font-medium text-on-surface mb-2 leading-snug group-hover:text-primary transition-colors">Responsive Mobile Breakpoints QA</h3>
+<div class="flex flex-wrap gap-1.5 mb-3">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-low text-on-surface-variant font-label-xs text-label-xs">#frontend</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-low text-on-surface-variant font-label-xs text-label-xs">#css</span>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-center gap-3 text-on-surface-variant font-label-xs text-label-xs">
+<span class="flex items-center gap-1 text-on-surface-variant/80">
+<span class="material-symbols-outlined text-sm">chat_bubble_outline</span> 4
+                </span>
+<span class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">event</span> Nov 2
+                </span>
+</div>
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Small portrait avatar of lead engineer with dark beard and grey crewneck" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaELRYJWrDcuc91wbYiO35fWp5rbmYPp8iweDtj2B8TWTAJ1FNXV37_8x8xslni_xd4zoxCZb8vm78NxTtF6BVGo2mkjGpT5kiaZqy3fDB5zp4KXGdb9Fhaf_2KMiYtunctc4hYUWQFB8B96Omyx0p9ghb034mR5l-mYOT0k9XGz4E6lbPBa_-4hVlCDuoqeO61QZgUgNvWRz8qvTYbioJ9L84iNvWpQMj_UP-6s4"/>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="task-card group p-3.5 bg-surface-container-lowest rounded-lg shadow-sm hover:shadow-md cursor-pointer transition-all duration-200" data-task-id="TASK-103">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-xs text-label-xs font-mono font-semibold text-on-surface-variant">TASK-103</span>
+<span class="px-2 py-0.5 rounded bg-amber-500/15 text-amber-700 font-label-xs text-label-xs font-medium">Medium</span>
+</div>
+<h3 class="font-body-md text-body-md font-medium text-on-surface mb-2 leading-snug group-hover:text-primary transition-colors">Configure Content Security Policy &amp; CORS</h3>
+<div class="flex flex-wrap gap-1.5 mb-3">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-low text-on-surface-variant font-label-xs text-label-xs">#security</span>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-center gap-3 text-on-surface-variant font-label-xs text-label-xs">
+<span class="flex items-center gap-1 text-on-surface-variant/80">
+<span class="material-symbols-outlined text-sm">chat_bubble_outline</span> 1
+                </span>
+<span class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">calendar_today</span> Nov 4
+                </span>
+</div>
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Small round headshot of female systems architect with bright expression and headphones around neck" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBM_U8GV2mIJ053hJqhBrjUzWraMMPWRIm12_PXEcGDBp1yJ5Ti0Nf0SdrZnVS18ffElvQn63kUoPm-W6ehzXSYfk8Kerbn81bM0trrN2CGr7Zy_703s3D6jiBaNrQAWchJt6_w6RhzlXser5PcFx43E5xM8vxaN1niMM0dgH8bWvaaE583wbNvmw388lRISL_IoJppohQlnGouveabQFsEvQH0u5j7AzWKVxdUric"/>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="task-card group p-3.5 bg-surface-container-lowest rounded-lg shadow-sm hover:shadow-md cursor-pointer transition-all duration-200" data-task-id="TASK-105">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-xs text-label-xs font-mono font-semibold text-on-surface-variant">TASK-105</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-xs text-label-xs font-medium">Low</span>
+</div>
+<h3 class="font-body-md text-body-md font-medium text-on-surface mb-2 leading-snug group-hover:text-primary transition-colors">Prepare Release Notes v1.0</h3>
+<div class="flex flex-wrap gap-1.5 mb-3">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-low text-on-surface-variant font-label-xs text-label-xs">#marketing</span>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="flex items-center gap-1 text-on-surface-variant font-label-xs text-label-xs">
+<span class="material-symbols-outlined text-sm">calendar_today</span> Nov 10
+              </span>
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Small user avatar of technical writer with friendly face" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqpfWma9P8vog52jabFF_tY1sw3XhWeKfIfHfcVC4ytu00v1b4pOqEe-GD1xrnUGOwbWfhaWmYOZiP9GaGsIVABOLEBZj5gQrpGRo6LxUpxidY6sBVny0zyef3OIguOp92npbuwJNKAgJdkLpIqwjm3g7xT4vrkT8nuvdyHUc6Uqpf43Ron2t6XRP8wgjnevHHt-VDQcWL0Rg2Gj8kPyD5xYuP9PMfmxJnjj8hoJc"/>
+</div>
+</div>
+</div>
+</div>
+<!-- COLUMN 2: IN PROGRESS -->
+<div class="flex flex-col bg-surface-container-low/70 rounded-xl p-space-sm h-[calc(100vh-190px)] min-h-[620px]">
+<div class="flex items-center justify-between px-2 py-1.5 mb-2">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></span>
+<h2 class="font-label-md text-label-md font-semibold text-on-surface">In Progress</h2>
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-xs text-label-xs font-bold">3</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="Quick Add" type="button">
+<span class="material-symbols-outlined text-lg">add</span>
+</button>
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">more_horiz</span>
+</button>
+</div>
+</div>
+<!-- Task Cards Stack -->
+<div class="flex flex-col gap-2.5 overflow-y-auto pr-1 flex-1">
+<!-- Card: Selected Task (Design Homepage & Navigation UI) -->
+<div class="task-card group p-3.5 bg-surface-container-lowest rounded-lg shadow-md cursor-pointer transition-all duration-200 relative overflow-hidden bg-gradient-to-r from-primary/5 via-surface-container-lowest to-surface-container-lowest" data-task-id="TASK-104">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary"></div>
+<div class="flex items-center justify-between mb-2 pl-1">
+<div class="flex items-center gap-1.5">
+<span class="font-label-xs text-label-xs font-mono font-bold text-primary">TASK-104</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+</div>
+<span class="px-2 py-0.5 rounded bg-error/15 text-error font-label-xs text-label-xs font-bold uppercase tracking-wider">High</span>
+</div>
+<h3 class="font-body-md text-body-md font-semibold text-primary mb-2 leading-snug pl-1">Design Homepage &amp; Navigation UI</h3>
+<div class="flex flex-wrap gap-1.5 mb-3 pl-1">
+<span class="px-1.5 py-0.5 rounded bg-primary-fixed text-on-primary-fixed-variant font-label-xs text-label-xs font-semibold">#design</span>
+<span class="px-1.5 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed-variant font-label-xs text-label-xs font-semibold">#ui</span>
+</div>
+<div class="flex items-center justify-between pt-2 pl-1">
+<div class="flex items-center gap-3 text-on-surface-variant font-label-xs text-label-xs">
+<span class="flex items-center gap-1 text-primary font-medium">
+<span class="material-symbols-outlined text-sm">chat</span> 5
+                </span>
+<span class="flex items-center gap-1 text-on-surface-variant/80">
+<span class="material-symbols-outlined text-sm">checklist</span> 3/4
+                </span>
+<span class="flex items-center gap-1 text-error font-medium">
+<span class="material-symbols-outlined text-sm">event</span> Oct 30
+                </span>
+</div>
+<div class="relative" title="Shivang Saxena">
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Portrait photo of Shivang Saxena looking forward in indigo light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCft-SCr3RkChsbn368jFgEup3vpqwhw7co-vyXSJVrv97KYCD7ZwnGwMTGRjiof6wbolUv2Y3HELmMvqr_5zF4S2BTQnpzLACDqSLrgU4XXz_u1Em4CMIHRnVYL_psJz1UwY70Bp7vpNzfE10aS-5bY1L8YrUhsvfrGH4mcRX1_atX1ea6K4vG-FmVdI1AuYSJbyCwmsLOXPSMTRE5T3VtY3VD1d6P0d3YKhEbRDM"/>
+</div>
+</div>
+</div>
+<!-- Card 2: Socket.IO Hub -->
+<div class="task-card group p-3.5 bg-surface-container-lowest rounded-lg shadow-sm hover:shadow-md cursor-pointer transition-all duration-200" data-task-id="TASK-106">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-xs text-label-xs font-mono font-semibold text-on-surface-variant">TASK-106</span>
+<span class="px-2 py-0.5 rounded bg-error text-on-error font-label-xs text-label-xs font-bold uppercase tracking-wider">Urgent</span>
+</div>
+<h3 class="font-body-md text-body-md font-medium text-on-surface mb-2 leading-snug group-hover:text-primary transition-colors">Implement Socket.IO Duplex Hub</h3>
+<div class="flex flex-wrap gap-1.5 mb-3">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-low text-on-surface-variant font-label-xs text-label-xs">#backend</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-low text-on-surface-variant font-label-xs text-label-xs">#realtime</span>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-center gap-3 text-on-surface-variant font-label-xs text-label-xs">
+<span class="flex items-center gap-1 text-on-surface-variant/80">
+<span class="material-symbols-outlined text-sm">chat_bubble_outline</span> 8
+                </span>
+<span class="flex items-center gap-1 text-error font-medium">
+<span class="material-symbols-outlined text-sm">alarm</span> Oct 29
+                </span>
+</div>
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Small square cropped photo of back-end programmer in black shirt" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDf59H64Lk-eAlj1NRh56_x0sLRFplYEfGUSh9Pjy-EXoNUQNLShaH7vNw1dZLFHs1h0YVjQv1iowlVdgO8Cn1T1pcD6tEDNXme-3qBGKani9N9gehWDbPl0X5e1Xx2eKwG1UCHi37TZrR2KPvrpYqg2F82-JdBQue9m32PZd_uV1iedGINv3WmDf0IKIjL24mCrFbKANDppRF2ZJt9HWitvENzfQ45mxhdagygbhU"/>
+</div>
+</div>
+<!-- Card 3: Mongoose Schemas -->
+<div class="task-card group p-3.5 bg-surface-container-lowest rounded-lg shadow-sm hover:shadow-md cursor-pointer transition-all duration-200" data-task-id="TASK-107">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-xs text-label-xs font-mono font-semibold text-on-surface-variant">TASK-107</span>
+<span class="px-2 py-0.5 rounded bg-error/15 text-error font-label-xs text-label-xs font-semibold">High</span>
+</div>
+<h3 class="font-body-md text-body-md font-medium text-on-surface mb-2 leading-snug group-hover:text-primary transition-colors">Setup Mongoose Schemas &amp; Indexes</h3>
+<div class="flex flex-wrap gap-1.5 mb-3">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-low text-on-surface-variant font-label-xs text-label-xs">#database</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-low text-on-surface-variant font-label-xs text-label-xs">#mongodb</span>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-center gap-3 text-on-surface-variant font-label-xs text-label-xs">
+<span class="flex items-center gap-1 text-on-surface-variant/80">
+<span class="material-symbols-outlined text-sm">chat_bubble_outline</span> 3
+                </span>
+<span class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">calendar_today</span> Oct 31
+                </span>
+</div>
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Portrait photo of Shivansh Gupta with glasses in subtle warm studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQ61R7gNNeRzwOAUKx9tIc0poftmVcCvPpTn8iyLYPccf8acXYKOGa1xU34cJogVslGYlX0TZ9SzZXApySKu-b9F_98Iop0C19RJMNoNHXYVdIGMtCnAwy20X0g6W7wgMNbuzd5qOQAzLU9cCs4opY6zR-W3P721YrA8siBSdn6eqUsWgXP-6eKmZ3nGuIcdGZX4uknYVGP7-g_iQLWc8VSuyizY39ePojLRdj9y4"/>
+</div>
+</div>
+</div>
+</div>
+<!-- COLUMN 3: IN REVIEW -->
+<div class="flex flex-col bg-surface-container-low/70 rounded-xl p-space-sm h-[calc(100vh-190px)] min-h-[620px]">
+<div class="flex items-center justify-between px-2 py-1.5 mb-2">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+<h2 class="font-label-md text-label-md font-semibold text-on-surface">In Review</h2>
+<span class="px-2 py-0.5 rounded-full bg-amber-500/15 text-amber-700 font-label-xs text-label-xs font-bold">2</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">add</span>
+</button>
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">more_horiz</span>
+</button>
+</div>
+</div>
+<!-- Task Cards Stack -->
+<div class="flex flex-col gap-2.5 overflow-y-auto pr-1 flex-1">
+<!-- Card 1 -->
+<div class="task-card group p-3.5 bg-surface-container-lowest rounded-lg shadow-sm hover:shadow-md cursor-pointer transition-all duration-200" data-task-id="TASK-108">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-xs text-label-xs font-mono font-semibold text-on-surface-variant">TASK-108</span>
+<span class="px-2 py-0.5 rounded bg-error text-on-error font-label-xs text-label-xs font-bold uppercase tracking-wider">Urgent</span>
+</div>
+<h3 class="font-body-md text-body-md font-medium text-on-surface mb-2 leading-snug group-hover:text-primary transition-colors">HttpOnly Cookie Auth &amp; Rate Limiter</h3>
+<div class="flex flex-wrap gap-1.5 mb-3">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-low text-on-surface-variant font-label-xs text-label-xs">#security</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-low text-on-surface-variant font-label-xs text-label-xs">#auth</span>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-center gap-3 text-on-surface-variant font-label-xs text-label-xs">
+<span class="flex items-center gap-1 text-on-surface-variant/80">
+<span class="material-symbols-outlined text-sm">chat_bubble_outline</span> 6
+                </span>
+<span class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">calendar_today</span> Oct 28
+                </span>
+</div>
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Portrait photo of developer wearing casual navy shirt with clean smile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeQePCroRmrVdfdMbXIdp7Fjbeul6S3XAt-bUUBFiU1lgDvNx4hkIt9QAUIPvinyPEfkzgvTq1XB8vNjUz4haBaKMmSpEhh556pN6YR5zkhQNRZqsDb0HObVZK_6ooHCsUqK034I1wDVjMe-t4i9MWfA1tH93MhBNmGBf14vpi_XlmcEKHN49gRxw3RGk4hxlIgi3NscP38YjOIPxqnvhNABsnaF1A5O_MmF7TCl4"/>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="task-card group p-3.5 bg-surface-container-lowest rounded-lg shadow-sm hover:shadow-md cursor-pointer transition-all duration-200" data-task-id="TASK-109">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-xs text-label-xs font-mono font-semibold text-on-surface-variant">TASK-109</span>
+<span class="px-2 py-0.5 rounded bg-error/15 text-error font-label-xs text-label-xs font-semibold">High</span>
+</div>
+<h3 class="font-body-md text-body-md font-medium text-on-surface mb-2 leading-snug group-hover:text-primary transition-colors">Interactive Dashboard Layout</h3>
+<div class="flex flex-wrap gap-1.5 mb-3">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-low text-on-surface-variant font-label-xs text-label-xs">#frontend</span>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-center gap-3 text-on-surface-variant font-label-xs text-label-xs">
+<span class="flex items-center gap-1 text-on-surface-variant/80">
+<span class="material-symbols-outlined text-sm">chat_bubble_outline</span> 2
+                </span>
+<span class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">calendar_today</span> Oct 28
+                </span>
+</div>
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Portrait of Adarsh Verma with tech team backdrop smiling into camera" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPx5xoLx5TvectcvMawsJfkIMq9k0n1OJKFoiAeDnK2oGLsPjjoSFxBRdA8aE8t7l3kYKzUA3jkihnDhwGN_Dj7tOyyO11KO7jEij84sC3K0G4zu1tnURRDwhQ9JtPh8y8qbYd0xgEQKTS1ye9n22zAQQNIs-_8ZxwbRBhJ-ocS78WLihA7GknlNIPuJ87dFftGlyvf1Yzd-1beJJ6bg4p5T-gQrZijJo--vmMyfc"/>
+</div>
+</div>
+</div>
+</div>
+<!-- COLUMN 4: DONE -->
+<div class="flex flex-col bg-surface-container-low/70 rounded-xl p-space-sm h-[calc(100vh-190px)] min-h-[620px]">
+<div class="flex items-center justify-between px-2 py-1.5 mb-2">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+<h2 class="font-label-md text-label-md font-semibold text-on-surface">Done</h2>
+<span class="px-2 py-0.5 rounded-full bg-emerald-500/15 text-emerald-700 font-label-xs text-label-xs font-bold">5</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">more_horiz</span>
+</button>
+</div>
+</div>
+<!-- Task Cards Stack -->
+<div class="flex flex-col gap-2.5 overflow-y-auto pr-1 flex-1">
+<!-- Done Card 1 -->
+<div class="task-card group p-3.5 bg-surface-container-lowest/80 rounded-lg shadow-sm hover:shadow-md cursor-pointer transition-all duration-200 opacity-90" data-task-id="TASK-110">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-xs text-label-xs font-mono font-semibold text-on-surface-variant">TASK-110</span>
+<span class="px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-700 font-label-xs text-label-xs font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">check</span> Completed
+              </span>
+</div>
+<h3 class="font-body-md text-body-md font-medium text-on-surface line-through text-on-surface-variant mb-2 leading-snug">System Architecture &amp; PRD Sign-off</h3>
+<div class="flex flex-wrap gap-1.5 mb-3">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-low text-on-surface-variant font-label-xs text-label-xs">#planning</span>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="text-on-surface-variant font-label-xs text-label-xs">Completed Oct 26</span>
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Round avatar icon of system architect smiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCr1sm8huSMuAmWuaVQxFHtsak6i-nnWFZ5gLW4xPP3ExevPU2569p7R_1VBXrTwB7B4NKoWjlN_q_VVIPvFKlLF45al4QWZM-iVuVvYu4krZKOQpbNovOca6NNCp5AHyppHNE7Bl663NOuKKRE-eb1-7fVuxHeYNs0nIjqVU_IlBn6nA75ywSSws66MxbquO0S1ng-RFUZtJDpm0po3sFKapn43axiVVM8HvKa3zg"/>
+</div>
+</div>
+<!-- Done Card 2 -->
+<div class="task-card group p-3.5 bg-surface-container-lowest/80 rounded-lg shadow-sm hover:shadow-md cursor-pointer transition-all duration-200 opacity-90" data-task-id="TASK-111">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-xs text-label-xs font-mono font-semibold text-on-surface-variant">TASK-111</span>
+<span class="px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-700 font-label-xs text-label-xs font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">check</span> Completed
+              </span>
+</div>
+<h3 class="font-body-md text-body-md font-medium text-on-surface line-through text-on-surface-variant mb-2 leading-snug">Database Schema ERD Diagram</h3>
+<div class="flex flex-wrap gap-1.5 mb-3">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-low text-on-surface-variant font-label-xs text-label-xs">#docs</span>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="text-on-surface-variant font-label-xs text-label-xs">Completed Oct 26</span>
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Round portrait avatar of backend lead engineer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDD5IX2sNHUrq6e2w-guaTqYVPbuxaOUt9v2_oo1cl4JYILjd5-dVeUm8fF-4dLXFqCoW4F12j92hu3O9_JAnnctBYstkPgX8JNyA8YbyJps2xykf5gBzSn-Nr0BOAFxGjsRdgrRl23H900orc2arNrF-ZqxPPWiSSGkCM3ixxLpqDqqCuhN_svWKgrneGl_tn_UrGzrZ-2bOdkwGFD56mykeMctLGsXWS6Wk3yIyQ"/>
+</div>
+</div>
+<!-- Done Card 3 -->
+<div class="task-card group p-3.5 bg-surface-container-lowest/80 rounded-lg shadow-sm hover:shadow-md cursor-pointer transition-all duration-200 opacity-90" data-task-id="TASK-112">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-xs text-label-xs font-mono font-semibold text-on-surface-variant">TASK-112</span>
+<span class="px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-700 font-label-xs text-label-xs font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">check</span> Completed
+              </span>
+</div>
+<h3 class="font-body-md text-body-md font-medium text-on-surface line-through text-on-surface-variant mb-2 leading-snug">Initial Git Repository &amp; CI Pipeline</h3>
+<div class="flex flex-wrap gap-1.5 mb-3">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-low text-on-surface-variant font-label-xs text-label-xs">#devops</span>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="text-on-surface-variant font-label-xs text-label-xs">Completed Oct 25</span>
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Portrait photo of Devops infrastructure engineer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD14cfqa37hblwui-D5E79nwYSY3Y2XTrFwPyp1vI0JfHetSE__o-QvXZHRvuG5N6r9cF5OHQqKC-OK-DanJHlURKAQlPf0Bbn0N8qSN668cj0gXaRsl17QcFECk5H9dGZa-OVNFNu-IHkEzeUyqMAubAyFK5Nlr9qmjd-KQDDS0Z9WTY2IAB3HdxZ4ncKgvjBbgkMvBdyyGARit2BPhjTWF0bnYAEbXTfYntDbk2A"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- CONTEXTUAL TASK DETAIL DRAWER (Active for TASK-104) -->
+<aside class="w-full lg:w-[480px] xl:w-[540px] shrink-0 bg-surface-container-lowest rounded-2xl shadow-xl flex flex-col h-[calc(100vh-190px)] min-h-[620px] overflow-hidden transition-all duration-300" id="taskDetailDrawer">
+<!-- Drawer Header Bar -->
+<div class="p-space-lg bg-surface-container-low/40 flex items-center justify-between">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-xs text-label-xs font-medium">
+<span class="hover:text-primary transition-colors cursor-pointer">Website Redesign</span>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<span class="text-primary font-semibold">In Progress</span>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<span class="font-mono text-on-surface font-semibold">TASK-104</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="Copy Link" type="button">
+<span class="material-symbols-outlined text-lg">link</span>
+</button>
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="Full Screen" type="button">
+<span class="material-symbols-outlined text-lg">open_in_full</span>
+</button>
+<button class="p-1 rounded text-on-surface-variant hover:text-error hover:bg-error-container/20 transition-colors" id="closeDrawerBtn" title="Close Drawer" type="button">
+<span class="material-symbols-outlined text-lg">close</span>
+</button>
+</div>
+</div>
+<!-- Drawer Scrollable Body -->
+<div class="flex-1 overflow-y-auto p-space-lg flex flex-col gap-space-lg">
+<!-- Editable Title and Quick Actions -->
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="px-2 py-0.5 rounded bg-primary/10 text-primary font-label-xs text-label-xs font-bold uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-xs animate-spin">sync</span>
+              In Progress
+            </span>
+<span class="px-2 py-0.5 rounded bg-error/15 text-error font-label-xs text-label-xs font-bold uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">flag</span>
+              High Priority
+            </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">Design Homepage &amp; Navigation UI</h2>
+</div>
+<!-- Meta Properties Bento Grid -->
+<div class="grid grid-cols-2 gap-space-sm bg-surface-container-low p-space-md rounded-xl">
+<div class="flex flex-col gap-1">
+<span class="font-label-xs text-label-xs text-on-surface-variant font-medium">Assignee</span>
+<div class="flex items-center gap-2">
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Portrait photo of Shivang Saxena in crisp studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB24U8E0JbTqi09D09p_dGyfmQeYm9XY97dll8XJrS-tns0bhfHC6KGecGLfrB5QwsT8DxeUjQu4YH830yyauZrKblw-iP99l7HbWWbkTc6TIp8CSJc-FyXnMIzA6OCYkb_oz6PGCux6I8WITwS9wzB6DDmkIQvomvsurGB0r_ClvxHOP9C5RN2iOPoE9oKmqdigIhRd2txxfoM1BCJcv2A5C8R6uOXuTx32ZkXGHs"/>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Shivang Saxena</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-xs text-label-xs text-on-surface-variant font-medium">Due Date</span>
+<div class="flex items-center gap-1.5 text-error font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-base">calendar_month</span>
+<span>Oct 30, 2026</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-xs text-label-xs text-on-surface-variant font-medium">Tags</span>
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed-variant font-label-xs text-label-xs font-semibold">#design</span>
+<span class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed-variant font-label-xs text-label-xs font-semibold">#ui</span>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-xs text-label-xs font-semibold">#tailwind</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-xs text-label-xs text-on-surface-variant font-medium">Estimation</span>
+<div class="flex items-center gap-1 font-label-md text-label-md font-semibold text-on-surface">
+<span class="material-symbols-outlined text-base text-tertiary">timer</span>
+<span>12 Story Points</span>
+</div>
+</div>
+</div>
+<!-- Description Box -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<h4 class="font-label-md text-label-md font-semibold text-on-surface">Description</h4>
+<button class="text-primary hover:underline font-label-xs text-label-xs font-medium" type="button">Edit</button>
+</div>
+<div class="bg-surface p-space-md rounded-lg font-body-sm text-body-sm text-on-surface leading-relaxed flex flex-col gap-2">
+<p>Create a modern, responsive layout for the public homepage and global navigational drawer. Ensure seamless token synchronization between Tailwind configuration and Figma components.</p>
+<p class="text-on-surface-variant">Focus strictly on WCAG AA contrast, kinetic micro-interactions on task movement, and sub-100ms render speeds.</p>
+</div>
+</div>
+<!-- Acceptance Criteria Checklist -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<h4 class="font-label-md text-label-md font-semibold text-on-surface">Acceptance Criteria</h4>
+<span class="px-2 py-0.2 rounded-full bg-primary/10 text-primary font-label-xs text-label-xs font-bold">3/4 Done</span>
+</div>
+<button class="text-primary hover:text-primary-container text-xs font-semibold flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-sm">add</span> Add Item
+            </button>
+</div>
+<div class="flex flex-col gap-2 bg-surface-container-low/50 p-space-sm rounded-lg">
+<label class="flex items-center gap-2.5 p-1.5 rounded hover:bg-surface-container transition-colors cursor-pointer">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface line-through text-on-surface-variant">Configure typography scale tokens and line-height ramps</span>
+</label>
+<label class="flex items-center gap-2.5 p-1.5 rounded hover:bg-surface-container transition-colors cursor-pointer">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface line-through text-on-surface-variant">Implement responsive collapsible desktop rail</span>
+</label>
+<label class="flex items-center gap-2.5 p-1.5 rounded hover:bg-surface-container transition-colors cursor-pointer">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface line-through text-on-surface-variant">Audit color tokens for dark and light accessibility</span>
+</label>
+<label class="flex items-center gap-2.5 p-1.5 rounded hover:bg-surface-container transition-colors cursor-pointer">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Verify drag-and-drop live sync with WebSockets duplex</span>
+</label>
+</div>
+</div>
+<!-- Attachments Section -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<h4 class="font-label-md text-label-md font-semibold text-on-surface">Attachments (2)</h4>
+<button class="text-primary hover:underline font-label-xs text-label-xs font-medium flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-sm">upload_file</span> Upload
+            </button>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center gap-2 hover:bg-surface-container transition-colors cursor-pointer">
+<div class="w-8 h-8 rounded bg-primary-container/20 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-base">picture_as_pdf</span>
+</div>
+<div class="min-w-0">
+<div class="font-label-xs text-label-xs font-semibold text-on-surface truncate">design-spec-v2.pdf</div>
+<div class="font-label-xs text-label-xs text-on-surface-variant">2.4 MB</div>
+</div>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center gap-2 hover:bg-surface-container transition-colors cursor-pointer">
+<div class="w-8 h-8 rounded bg-tertiary-container/20 text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-base">image</span>
+</div>
+<div class="min-w-0">
+<div class="font-label-xs text-label-xs font-semibold text-on-surface truncate">wireframe-art.png</div>
+<div class="font-label-xs text-label-xs text-on-surface-variant">1.1 MB</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Real-Time Activity & Discussion Thread -->
+<div class="flex flex-col gap-space-md pt-2">
+<div class="flex items-center justify-between">
+<h4 class="font-label-md text-label-md font-semibold text-on-surface flex items-center gap-1.5">
+<span>Discussion</span>
+<span class="px-2 py-0.2 rounded-full bg-surface-container text-on-surface-variant font-label-xs text-label-xs">3</span>
+</h4>
+<span class="font-label-xs text-label-xs text-emerald-600 flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+              Live Synced
+            </span>
+</div>
+<!-- Comments Feed -->
+<div class="flex flex-col gap-space-md" id="commentsThreadContainer">
+<!-- Comment 1 -->
+<div class="flex items-start gap-space-sm">
+<img class="w-8 h-8 rounded-full object-cover shrink-0" data-alt="Portrait avatar of Shivansh Gupta engineer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCV174rud5rcArEUiJ1NG4XbW-2hrJKFPYJpGGu3JSM9sNSdEEahjl_bT6Gsjiw7kEXGT3ZHR6yRg4SPxXXynsWOdva2-Mh7ufL60jAnyF0QWH4ADP6Vj6aBrLBVjmjrivUAXnaOdDTZFUABcKxp8TZREytuo4CqywYtAU_7NBHV4ugKSvBXA-VdcpKNT_7mhAe2QEHOykgPPBPWFtH0tANyHhu2Zj6lXTkHUrnulM"/>
+<div class="flex-1 flex flex-col gap-1 bg-surface-container-low p-space-sm rounded-xl">
+<div class="flex items-center justify-between">
+<span class="font-label-xs text-label-xs font-semibold text-on-surface">Shivansh Gupta</span>
+<span class="font-label-xs text-label-xs text-on-surface-variant">2 hours ago</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">Looks great! Let's ensure dark mode tokens match the CSS spec before we cut the beta build.</p>
+</div>
+</div>
+<!-- Comment 2 -->
+<div class="flex items-start gap-space-sm">
+<img class="w-8 h-8 rounded-full object-cover shrink-0" data-alt="Portrait avatar of Adarsh Verma developer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0jG0TPtX4CCOrR26u8d4lm-07Kv1vPtThtiXZYoqUBVryESsDjbPgYqXRQUFV4yNQbhWp3X4s9-5Q0-ID1bwG5geT9w4heRTq77LfPp5FLKGVwhN-92WjOrZIFRTdGZz5-q-813o4sz5NjEt_4r1gFOgZOygIsohkqSkQ78RMzyl3s7XjF1Sjibt8Tk2Jx1b3ouODE9uwPUrw1cjWdvIsHcXeZxQ0ZvhjeKS_PJA"/>
+<div class="flex-1 flex flex-col gap-1 bg-surface-container-low p-space-sm rounded-xl">
+<div class="flex items-center justify-between">
+<span class="font-label-xs text-label-xs font-semibold text-on-surface">Adarsh Verma</span>
+<span class="font-label-xs text-label-xs text-on-surface-variant">45 mins ago</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">Agreed. I tested the mobile drawer navigation at 375px viewport and it feels snappy. Ready for QA approval.</p>
+</div>
+</div>
+<!-- Comment 3 (Just now) -->
+<div class="flex items-start gap-space-sm">
+<img class="w-8 h-8 rounded-full object-cover shrink-0" data-alt="Portrait avatar of Shivang Saxena project owner" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5LfXKqy2D-4ZSmjzv412zBlHiRsBpzquJ-Np7gdJHrZZmvKUm1ndxukcLLRGWzZF-BEK1_clQt_SlFiNMGQVjr122YKuiqUN0fLw-HUIaa5r9Z6-tV_w3wKImJw1JPPRQ07Bt_KsNG97UKNA3jli8JDexh_DquSPp6ZoJMOwUXdga6FdsWgBUiNqitEiC3Y7zTIIGdu9mK8VHfWWsxRaOh5y3hJmIEuc_gzyFyek"/>
+<div class="flex-1 flex flex-col gap-1 bg-primary/5 p-space-sm rounded-xl">
+<div class="flex items-center justify-between">
+<span class="font-label-xs text-label-xs font-semibold text-primary">Shivang Saxena</span>
+<span class="font-label-xs text-label-xs text-primary font-medium">Just now</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface"><span class="font-semibold text-primary">@shivansh</span> updated the contrast tokens for all WCAG AA compliance. Ready for deployment pass!</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Drawer Footer: Interactive Comment Input -->
+<div class="p-space-md bg-surface-container-low/70 flex flex-col gap-2">
+<div class="flex items-center gap-1.5 px-1 text-on-surface-variant font-label-xs text-label-xs">
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface" title="Bold" type="button">
+<span class="material-symbols-outlined text-sm">format_bold</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface" title="Italic" type="button">
+<span class="material-symbols-outlined text-sm">format_italic</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface" title="List" type="button">
+<span class="material-symbols-outlined text-sm">format_list_bulleted</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface" title="Attach file" type="button">
+<span class="material-symbols-outlined text-sm">attach_file</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-primary font-medium" title="Mention Team Member" type="button">
+            @ Mention
+          </button>
+</div>
+<div class="flex items-center gap-2">
+<input class="flex-1 px-3 py-2 rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm shadow-sm focus:outline-none focus:ring-1 focus:ring-primary transition-all" id="newCommentInput" placeholder="Write a comment or type @ to mention..." type="text"/>
+<button class="flex items-center justify-center p-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary transition-all active:scale-95 shadow" id="submitCommentBtn" type="button">
+<span class="material-symbols-outlined text-lg">send</span>
+</button>
+</div>
+</div>
+</aside>
+</div>
+</div>
+<script>
+  // Quick Micro-Interactions for TaskFlow Board
+  document.addEventListener('DOMContentLoaded', () => {
+    const taskCards = document.querySelectorAll('.task-card');
+    const drawer = document.getElementById('taskDetailDrawer');
+    const closeDrawerBtn = document.getElementById('closeDrawerBtn');
+    const commentInput = document.getElementById('newCommentInput');
+    const submitCommentBtn = document.getElementById('submitCommentBtn');
+    const commentsThread = document.getElementById('commentsThreadContainer');
+    const searchInput = document.getElementById('taskSearchInput');
+
+    // Drawer selection handling
+    taskCards.forEach(card => {
+      card.addEventListener('click', () => {
+        taskCards.forEach(c => {
+          c.classList.remove('ring-2', 'ring-primary', 'bg-primary/5');
+        });
+        card.classList.add('ring-2', 'ring-primary', 'bg-primary/5');
+        if (drawer.classList.contains('hidden')) {
+          drawer.classList.remove('hidden');
+        }
+      });
+    });
+
+    // Close drawer toggle
+    if (closeDrawerBtn && drawer) {
+      closeDrawerBtn.addEventListener('click', () => {
+        drawer.classList.add('hidden');
+      });
+    }
+
+    // Comment submission simulation
+    const postComment = () => {
+      const text = commentInput.value.trim();
+      if (!text) return;
+
+      const newCommentEl = document.createElement('div');
+      newCommentEl.className = 'flex items-start gap-space-sm animate-fade-in';
+      newCommentEl.innerHTML = `
+        <img src="placeholder" data-alt="Portrait photo of Shivang Saxena in indigo light" class="w-8 h-8 rounded-full object-cover shrink-0">
+        <div class="flex-1 flex flex-col gap-1 bg-primary/5 p-space-sm rounded-xl">
+          <div class="flex items-center justify-between">
+            <span class="font-label-xs text-label-xs font-semibold text-primary">Shivang Saxena</span>
+            <span class="font-label-xs text-label-xs text-primary font-medium">Just now</span>
+          </div>
+          <p class="font-body-sm text-body-sm text-on-surface">${text.replace(/@(\w+)/g, '<span class="font-semibold text-primary">@$1</span>')}</p>
+        </div>
+      `;
+      commentsThread.appendChild(newCommentEl);
+      commentInput.value = '';
+      commentsThread.scrollTop = commentsThread.scrollHeight;
+    };
+
+    if (submitCommentBtn) {
+      submitCommentBtn.addEventListener('click', postComment);
+    }
+    if (commentInput) {
+      commentInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') postComment();
+      });
+    }
+
+    // Live search filter across cards
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase();
+        taskCards.forEach(card => {
+          const text = card.innerText.toLowerCase();
+          if (text.includes(query)) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    }
+  });
+</script></main></div></body></html>
